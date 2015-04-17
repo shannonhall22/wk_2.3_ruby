@@ -81,6 +81,7 @@ class ArraysController < ApplicationController
     # Add the color "black" to the end of the array
     #==========================================
     colors = ["red", "green", "blue"]
+    colors.push("black")
 
     @result = colors
     render 'arrays'
@@ -94,6 +95,7 @@ class ArraysController < ApplicationController
       "The Godfather",
       "The Godfather: Part II"
     ]
+    classics << "Apocalypse Now"
 
     @result = classics
     render 'arrays'
@@ -104,6 +106,8 @@ class ArraysController < ApplicationController
     # Add "fútbol" and "football" to the end of the array
     #==========================================
     sports = [ "curling", "chess", "trampolining" ]
+    sports << "fútbol"
+    sports << "football"
 
     @result = sports
     render 'arrays'
