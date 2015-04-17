@@ -28,7 +28,7 @@ class ArraysController < ApplicationController
     #==========================================
     numbers = ["one", "two", "three", "four", "five"]
 
-    @result = "replace this string with your answer"
+    @result = numbers[4]
     render 'arrays'
   end
 
@@ -39,7 +39,7 @@ class ArraysController < ApplicationController
     #==========================================
     fruits = ["apples", "oranges", "bananas", "kiwis"]
 
-    @result = fruits
+    @result = fruits[0]
     render 'arrays'
   end
 
@@ -50,7 +50,7 @@ class ArraysController < ApplicationController
     #==========================================
     neighborhoods = ["Bridgeport", "Andersonville", "Avondale", "Lincoln Park"]
 
-    @result = "replace this string with your answer"
+    @result = neighborhoods[1]
     render 'arrays'
   end
 
