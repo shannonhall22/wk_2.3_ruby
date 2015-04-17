@@ -106,8 +106,7 @@ class ArraysController < ApplicationController
     # Add "fútbol" and "football" to the end of the array
     #==========================================
     sports = [ "curling", "chess", "trampolining" ]
-    sports << "fútbol"
-    sports << "football"
+    sports << "fútbol" << "football"
 
     @result = sports
     render 'arrays'
@@ -157,7 +156,7 @@ class ArraysController < ApplicationController
       {"name" => "Macbook air 13in", "price" => 999}
     ]
 
-    @result = "replace this string with your answer"
+    @result = products[1]["name"]
     render 'arrays'
   end
 
@@ -176,7 +175,7 @@ class ArraysController < ApplicationController
       ]
     }
 
-    @result = "replace this string with your answer"
+    @result = data["users"][2]["email"]
     render 'arrays'
   end
 end
